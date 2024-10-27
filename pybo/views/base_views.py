@@ -4,10 +4,12 @@ from django.db.models import Q
 
 from ..models import Question
 
+import logging
+logger = logging.getLogger('pybo')
+
 
 def index(request):
-    3 / 0  # 강제로 오류발생
-
+    logger.info("INFO 레벨로 출력")
 
     # return HttpResponse("안녕하세요 pybo에 오신것을 환영합니다.")
     page = request.GET.get('page', '1')  # 페이지
