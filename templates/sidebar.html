@@ -1,39 +1,39 @@
-<div class="col-md-3 col-lg-2 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 4.5rem;">
+<div class="col-md-3 col-lg-2 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 5.5em;  background-color: #343a40;">
     <a href="/" class="d-block mb-3 link-light text-decoration-none" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
-        <svg class="bi" width="32" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        <i class="bi bi-bootstrap" style="font-size: 2rem;"></i>
     </a>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
         <li class="nav-item">
-            <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
-                <svg class="bi" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#home"/></svg>
+            <a href="{% url 'a_board' %}" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" title="A Board" data-bs-toggle="tooltip" data-bs-placement="right">
+                <i class="bi bi-house-door-fill" style="font-size: 1.5rem;"></i>
             </a>
         </li>
         <li>
-            <a href="{% url 'a_board' %}" class="nav-link py-3 border-bottom rounded-0" title="Dashboard" data-bs-toggle="tooltip" data-bs-placement="right">
-                <svg class="bi" width="24" height="24" role="img" aria-label="Dashboard"><use xlink:href="#speedometer2"/></svg>
+            <a href="{% url 'b_board' %}" class="nav-link py-3 border-bottom rounded-0" title="B Board" data-bs-toggle="tooltip" data-bs-placement="right">
+                <i class="bi bi-speedometer2" style="font-size: 1.5rem;"></i>
             </a>
         </li>
         <li>
             <a href="{% url 'b_board' %}" class="nav-link py-3 border-bottom rounded-0" title="Orders" data-bs-toggle="tooltip" data-bs-placement="right">
-                <svg class="bi" width="24" height="24" role="img" aria-label="Orders"><use xlink:href="#table"/></svg>
+                <i class="bi bi-table" style="font-size: 1.5rem;"></i>
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Products" data-bs-toggle="tooltip" data-bs-placement="right">
-                <svg class="bi" width="24" height="24" role="img" aria-label="Products"><use xlink:href="#grid"/></svg>
+            <a href="{% url 'b_board' %}" class="nav-link py-3 border-bottom rounded-0" title="Products" data-bs-toggle="tooltip" data-bs-placement="right">
+                <i class="bi bi-grid" style="font-size: 1.5rem;"></i>
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Customers" data-bs-toggle="tooltip" data-bs-placement="right">
-                <svg class="bi" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"/></svg>
+            <a href="{% url 'b_board' %}" class="nav-link py-3 border-bottom rounded-0" title="Customers" data-bs-toggle="tooltip" data-bs-placement="right">
+                <i class="bi bi-people" style="font-size: 1.5rem;"></i>
             </a>
         </li>
     </ul>
     <div class="dropdown border-top">
         <a href="#" class="d-flex align-items-center justify-content-center p-3 link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <svg class="bi" width="24" height="24" role="img" aria-label="Account"><use xlink:href="#person-circle"/></svg>
+            <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
         </a>
-        <ul class="dropdown-menu text-small shadow">
+        <ul class="dropdown-menu dropdown-menu-end text-small shadow">
             <li><a class="dropdown-item" href="#">New project...</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li><a class="dropdown-item" href="#">Profile</a></li>
