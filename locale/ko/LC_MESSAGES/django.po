@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-11 00:13+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\templates\navbar.html:9
+msgid "Korea Trip Information"
+msgstr "한국 여행 정보"
+
+#: .\templates\navbar.html:21
+msgid "Regions"
+msgstr "지역"
+
+#: .\templates\navbar.html:26
+msgid "Transportation"
+msgstr "교통"
+
+#: .\templates\navbar.html:31
+msgid "Schedules"
+msgstr "일정"
+
+#: .\templates\navbar.html:36
+msgid "Tips & Extras"
+msgstr "팁 & 기타 정보"
+
+#: .\templates\navbar.html:41
+msgid "Community Board"
+msgstr "커뮤니티 게시판"
+
+#: .\templates\navbar.html:55
+msgid "Settings"
+msgstr "설정"
+
+#: .\templates\navbar.html:56
+msgid "Profile"
+msgstr "프로필"
+
+#: .\templates\navbar.html:61
+msgid "Sign out"
+msgstr "로그아웃"
+
+#: .\templates\navbar.html:63
+msgid "Login"
+msgstr "로그인"
+
+#: .\templates\navbar.html:68
+msgid "Register"
+msgstr "회원가입"
