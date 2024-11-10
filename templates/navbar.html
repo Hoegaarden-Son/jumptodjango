@@ -1,11 +1,12 @@
 {% load static %}
+{% load i18n %}
 
 <!-- 네비게이션바 -->
 <nav class="navbar navbar-expand-lg navbar-dark border-bottom bg-primary fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'pybo:index' %}">
             <img src="{% static 'images/nav/circular_2.png' %}" alt="Korea Trip Logo" width="40" height="40" class="d-inline-block align-text-middle">
-            Korea Trip Information
+            {% trans "Korea Trip Information" %}
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,27 +18,27 @@
                 <!-- 기존 사이드바 항목을 네비게이션바로 이동 -->
                 <li class="nav-item">
                     <a href="{% url 'a_board' %}" class="nav-link text-light" title="A Board">
-                        <i class="bi bi-house-door-fill" style="font-size: 1.5rem;"></i> Regions
+                        <i class="bi bi-house-door-fill" style="font-size: 1.5rem;"></i> {% trans "Regions" %}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'b_board' %}" class="nav-link text-light" title="B Board">
-                        <i class="bi bi-speedometer2" style="font-size: 1.5rem;"></i> Transportation
+                        <i class="bi bi-speedometer2" style="font-size: 1.5rem;"></i> {% trans "Transportation" %}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'b_board' %}" class="nav-link text-light" title="Orders">
-                        <i class="bi bi-table" style="font-size: 1.5rem;"></i> Schedules
+                        <i class="bi bi-table" style="font-size: 1.5rem;"></i> {% trans "Schedules" %}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'b_board' %}" class="nav-link text-light" title="Products">
-                        <i class="bi bi-grid" style="font-size: 1.5rem;"></i> Tips & Extras
+                        <i class="bi bi-grid" style="font-size: 1.5rem;"></i> {% trans "Tips & Extras" %}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'b_board' %}" class="nav-link text-light" title="Customers">
-                        <i class="bi bi-people" style="font-size: 1.5rem;"></i> Community Board
+                        <i class="bi bi-people" style="font-size: 1.5rem;"></i> {% trans "Community Board" %}
                     </a>
                 </li>
             </ul>
@@ -50,21 +51,21 @@
                         <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+<!--                        <li><a class="dropdown-item" href="#">New project...</a></li>-->
+                        <li><a class="dropdown-item" href="#">{% trans "Settings" %}</a></li>
+                        <li><a class="dropdown-item" href="#">{% trans "Profile" %}</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <!--<li><a class="dropdown-item" href="#">Sign out</a></li>-->
                         <li>
                             {% if user.is_authenticated %}
-                            <a class="dropdown-item" href="{% url 'common:logout' %}">{{ user.username }} (Sign out)</a>
+                            <a class="dropdown-item" href="{% url 'common:logout' %}">{{ user.username }} ({% trans "Sign out" %})</a>
                             {% else %}
-                            <a class="dropdown-item" href="{% url 'common:login' %}">Login</a>
+                            <a class="dropdown-item" href="{% url 'common:login' %}">{% trans "Login" %}</a>
                             {% endif %}
                         </li>
                         <li>
                             {% if not user.is_authenticated %}
-                            <a class="dropdown-item" href="{% url 'common:signup' %}">Register</a>
+                            <a class="dropdown-item" href="{% url 'common:signup' %}">{% trans "Register" %}</a>
                             {% endif %}
                         </li>
                     </ul>

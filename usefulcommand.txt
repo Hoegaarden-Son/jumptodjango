@@ -1,0 +1,5 @@
+python manage.py runserver --settings=config.settings.local
+
+django-admin makemessages -l ko --ignore=myvenv/** --ignore=requirements.txt
+django-admin makemessages -l ko --ignore=myvenv/** --ignore=**/*.txt
+django-admin compilemessages
