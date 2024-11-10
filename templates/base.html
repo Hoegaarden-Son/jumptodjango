@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <title>Korea Trip Info</title>
     <link rel="icon" type="image/png" href="{% static 'images/nav/circular_2.png' %}">
+    <style>
+        /* body와 html이 화면을 전부 차지하도록 설정 */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        /* main 컨텐츠가 충분하지 않을 경우 footer가 하단에 위치하도록 */
+        .container-fluid {
+            flex: 1;
+        }
+    </style>
 </head>
 <body style="padding-top: 56px;">
     {% include "navbar.html" %}
