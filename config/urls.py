@@ -27,6 +27,10 @@ urlpatterns = [
     path('', base_views.index, name='index'),  # '/' 에 해당되는 path
     path('a_board/', base_views.index, name='a_board'),
     path('b_board/', base_views.index, name='b_board'),
+
+    # 다른 URL 패턴
+    path('privacy/', base_views.privacy, name='privacy'),
+    path('terms/', base_views.terms, name='terms'),
 ]
 
 handler404 = 'common.views.page_not_found'
